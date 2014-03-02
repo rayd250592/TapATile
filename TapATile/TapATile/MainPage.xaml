@@ -1,0 +1,40 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TapATile.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="PageTitle" Text="Tap A Tile" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Begin" HorizontalAlignment="Left" Margin="171,495,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Rectangle x:Name="mainrec" Fill="#FF1919EC" HorizontalAlignment="Left" Height="127" Margin="140,198,0,0" Stroke="Black" VerticalAlignment="Top" Width="191"/>
+            <Rectangle x:Name="gamerec" Fill="#FF1919EC" HorizontalAlignment="Left" Height="67" Margin="32,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="87"/>
+            <TextBlock x:Name="time" HorizontalAlignment="Left" Margin="348,20,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            <TextBlock x:Name="t2" HorizontalAlignment="Left" Margin="261,74,0,0" TextWrapping="Wrap" Text="Score:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="t1" HorizontalAlignment="Left" Margin="261,20,0,0" TextWrapping="Wrap" Text="Time:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="score" HorizontalAlignment="Left" Margin="348,74,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
