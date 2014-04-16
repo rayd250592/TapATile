@@ -39,26 +39,14 @@ namespace TapATile
             time.Visibility = System.Windows.Visibility.Visible;
             score.Visibility = System.Windows.Visibility.Visible;
             gamerec.Visibility = System.Windows.Visibility.Visible;
+            main_button.Visibility = System.Windows.Visibility.Collapsed;
 
 
             //create timer objects
 
 
-            DispatcherTimer gamethread = new DispatcherTimer();
-            gamethread.Interval = TimeSpan.FromSeconds(1);
-            gamethread.Tick += gamethread_Tick;
-            gamethread.Start();
-            int timetemp = 0;
-
         }
 
-        void gamethread_Tick(object sender, EventArgs e)
-        {
-           
-            throw new NotImplementedException();
-            timetemp = timetemp + 1;
-
-
-        }
+   
     }
 }

@@ -27,7 +27,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="Begin" HorizontalAlignment="Left" Margin="171,495,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button x:Name="main_button" Content="Begin" HorizontalAlignment="Left" Margin="171,495,0,0" VerticalAlignment="Top" Click="Button_Click"/>
             <Rectangle x:Name="mainrec" Fill="#FF1919EC" HorizontalAlignment="Left" Height="127" Margin="140,198,0,0" Stroke="Black" VerticalAlignment="Top" Width="191"/>
             <Rectangle x:Name="gamerec" Fill="#FF1919EC" HorizontalAlignment="Left" Height="67" Margin="32,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="87"/>
             <TextBlock x:Name="time" HorizontalAlignment="Left" Margin="348,20,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
